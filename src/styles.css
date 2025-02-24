@@ -1,8 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    /* font-style: italic; */
 }
 
 body {
-    background-color: red;
+    background-color: #20222D;
+}
+.page {
+    margin: auto;
+    width: max(800px, min(80%, 1200px));
+    height: 100%;
+}
+header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo {
+    width: 100%;
+}
+.logo > img {
+    width: 100%;
+}
+.tagline {
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+.upper {
+    text-transform: uppercase;
+}
+.tagline > ul {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #bfbfbf;
+    position: absolute;
+    top: -18px;
+}
+header > .nav {
+    color:#f5ee6A;
+}
+
+.nav {
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    height: 3rem;
+    border: 3px solid #f5ee6A;
+    border-radius: 15px;
+    display: flex;
+    align-items: start;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.6rem;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.nav > ul > li {
+    height: 60px;
+    overflow: hidden;
+}
+
+a {
+    color: #f5ee6A;
+    text-decoration: none;
+    z-index: 5;
+}
+
+.nav > ul > li:hover {
+    .wavy {
+        visibility: visible;
+    }
+}
+
+.wavy {
+    visibility: hidden;
+    position: relative;
+    /* border: 1px solid red; */
+    height: 80px;
+}
+
+.wavy::before {
+    height: 80px;
+    content: "0000000000000000000";
+    position: absolute;
+    top: -20px;
+    left: 0; 
+    color: transparent;
+    text-decoration-color: #62dcc5;
+    text-decoration-thickness: 0.5rem;
+    text-decoration-style: wavy;
+    text-decoration-line: underline;
+    animation: wavy 01s linear infinite;
+}
+
+@keyframes wavy {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-65px);
+
+    }
 }
