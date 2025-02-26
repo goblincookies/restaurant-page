@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -44,14 +44,11 @@ header {
     position: absolute;
     top: -18px;
 }
-header > .nav {
-    color:#f5ee6A;
-}
 
 .nav {
     font-size: 1.2rem;
     font-weight: 600;
-    width: 100%;
+    width: 90%;
     height: 3rem;
     border: 3px solid #f5ee6A;
     border-radius: 15px;
@@ -71,12 +68,15 @@ ul {
 }
 
 .nav > ul > li {
+    /* border: 1px solid #f56a9f; */
     height: 60px;
+    width: 120px;
     overflow: hidden;
+    text-align: center;
 }
 
 a {
-    color: #f5ee6A;
+    color: #62dcc5;
     text-decoration: none;
     z-index: 5;
 }
@@ -87,10 +87,171 @@ a {
     }
 }
 
+.spacer {
+    width: 100%;
+    /* background-color: #f56a9f; */
+}
+.center-div {
+    width:fit-content;
+    margin: auto;
+    /* outline: 1px solid #fff; */
+}
+.section-text{
+    text-align: center;
+    text-transform: uppercase;
+}
+p.section-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #f56a9f;
+}
+
+h2.section-text {
+    transform: translateY(-5px);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #f5ee6A;
+    /* 1 pixel outline + shadow */
+    text-shadow:    3px 3px 0px #000,
+                    -1px -1px 0px #000,
+                    1px -1px 0px #000,
+                    -1px 1px 0px #000,
+                    1px 1px 0px #000;
+
+}
+div.hero {
+    height: 100%;
+    /* outline: 1px solid #fff; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+h2.heading {
+    font-family: "Sour Gummy", sans-serif;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    color: #f56a9f;
+}
+
+.outline {
+    z-index: -1;
+    position: relative;
+    transform: translateY( -100% );
+    outline: 3px solid #f5ee6A;
+    border-radius: 1.5rem;
+    width: 100%;
+    /* height: 150px; */
+
+    height: 50%;
+
+}
+.hero-container {
+    height: fit-content;
+    height: max(10px, min(500px, 30vw));
+    width: 100%;
+    padding-top: 1rem;
+}
+.hero-menu-content {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #f5ee6A; */
+    display: flex;
+    justify-content: stretch;
+    gap: 3rem;
+}
+.menu-hero-item {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    /* background-color: #62dcc5; */
+    /* align-items: center; */
+}
+img.hero {
+    /* width: 50px;
+    height: 50px; */
+    object-fit:contain;
+    height: max(10px, min(80%, 400px));
+}
+h3.menu {
+    font-family: "Sour Gummy", sans-serif;
+    text-transform: uppercase;
+
+    /* font-size: 2.4rem; */
+    /* font-size: 5vw; */
+
+    font-size: max(0.5rem, min(4vw, 2.2rem));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    color: #f56a9f;
+    /* outline: 1px solid #f56a9f; */
+
+}
+p.hero {
+    /* width: 100%;
+    height: 100%;
+    background-color: #f5ee6A; */
+    /* width: 40%; */
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #bfbfbf;
+}
+.hero-block {
+    height: fit-content;
+    outline: 1px solid #f56a9f;
+    height: max(10px, min(500px, 30vw));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 1rem;
+}
+
+h3.info {
+    /* padding-top: 1.5rem; */
+    padding-bottom: 1.5rem;
+    font-family: "Sour Gummy", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.0rem;
+    color: #f56a9f;
+    line-height: 1.7rem;
+
+}
+p.info {
+    color: #bfbfbf;
+    /* outline: 2px solid #f5ee6A; */
+}
+
+div.info {
+    width: 25%;
+}
+.info-text {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    outline: 3px solid #f5ee6A;
+    border-radius: 2rem;
+}
+.info-block {
+    /* outline: 1px solid #fff; */
+    width: 100%;
+    /* height: 30vh; */
+}
 .wavy {
     visibility: hidden;
     position: relative;
-    /* border: 1px solid red; */
     height: 80px;
 }
 
@@ -101,7 +262,7 @@ a {
     top: -20px;
     left: 0; 
     color: transparent;
-    text-decoration-color: #62dcc5;
+    text-decoration-color: #f56a9f;
     text-decoration-thickness: 0.5rem;
     text-decoration-style: wavy;
     text-decoration-line: underline;
@@ -113,7 +274,7 @@ a {
         transform: translateX(0px);
     }
     100% {
-        transform: translateX(-65px);
+        transform: translateX(-68px);
 
     }
 }
