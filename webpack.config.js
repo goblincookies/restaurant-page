@@ -31,6 +31,16 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/,
+                // use: [
+                //         {
+                //             loader: 'file-loader',
+                //             options: {
+                //                 name: '[path][name].[ext]?[hash]',
+                //                 useRelativePath: true,
+                //                 emitFile: false
+                //             }
+                //         }
+                //   ],
                 type: "asset/resource",
             },
         ]
