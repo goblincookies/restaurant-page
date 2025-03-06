@@ -3,9 +3,11 @@ import { SectionTitle } from "./sections/b_sectionTitle";
 import { HeroMenu } from "./sections/b_heroMenu";
 import { Menu } from "./sections/b_menu";
 
-import filecupcake1 from "../assets/images/cupcake1.png";
-import filecupcake2 from "../assets/images/cupcake2.png";
-import filecupcake3 from "../assets/images/cupcake3.png";
+import filecupcake1 from "../assets/images/cupcake1c.png";
+import filecupcake2 from "../assets/images/cupcake2c.png";
+import filecupcake3 from "../assets/images/cupcake3c.png";
+// import filecupcake3c from "../assets/images/cupcake3c.png";
+
 
 import menuFile1 from "../assets/images/bonfire.jpg";
 import menuFile2 from "../assets/images/candle.jpg";

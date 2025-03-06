@@ -4,7 +4,7 @@ import { SectionTitle } from "./sections/b_sectionTitle";
 import { InfoBlock } from "./sections/b_infoBlock";
 import { Gallery } from "./sections/b_gallery";
 
-import filecupcake1 from "../assets/images/cupcake4.png";
+import filecupcake1 from "../assets/images/cupcake4c.png";
 import illustration from "../assets/images/illustration.png";
 import ordering from "../assets/images/ordering.jpg";
 import cookie from "../assets/images/cookie.jpg";

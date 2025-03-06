@@ -18,7 +18,7 @@ const findUs = new FindUs();
 // SET UP FIRST PAGE
 const content = document.getElementById("content");
 let currentPage = page.OURSTORY;
-content.appendChild( findUs.getPage() );
+content.appendChild( ourStory.getPage() );
 
 
 
